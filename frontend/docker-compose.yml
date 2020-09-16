@@ -7,9 +7,9 @@ services:
       dockerfile: ./dockerfile
     image: frontend
     ports:
-      - 8081:3000
+      - 8082:3000
     volumes:
       - ./:/home/aydin
     command: tail -f /dev/null
-    environment: 
-        - REACT_APP_BACKEND_URL=http://localhost:8080
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:8080
